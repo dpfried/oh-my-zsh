@@ -1,4 +1,6 @@
-wrapsource=`which virtualenvwrapper_lazy.sh`
+# wrapsource=`which virtualenvwrapper_lazy.sh`
+# wrapsource=`which virtualenvwrapper.sh`
+wrapsource=$HOME/.local/bin/virtualenvwrapper_lazy.sh
 
 if [[ -f "$wrapsource" ]]; then
   source $wrapsource
@@ -36,5 +38,5 @@ if [[ -f "$wrapsource" ]]; then
     }
   fi
 else
-  print "zsh virtualenvwrapper plugin: Cannot find virtualenvwrapper_lazy.sh. Please install with \`pip install virtualenvwrapper\`."
+  print "zsh virtualenvwrapper plugin: Cannot find virtualenvwrapper.sh. Please install with \`pip install virtualenvwrapper\`."
 fi
